@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p, form {
+            margin: 0;
+            padding: 0;
+        }
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .headerme {
+            margin: 0;
+            padding: 0;
+            font-size: 32px;
+            animation: fade-in 1.5s ease-in-out;
+        }
+
+        .p {
+            font-size: 18px;
+            color: #555;
+            animation: fade-in 1.5s ease-in-out;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        .product {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-details {
+            flex: 1;
+        }
+
+        .product-details h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .product-details p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .product-details ul {
+            list-style: none;
+            padding-left: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .product-details ul li::before {
+            content: "\2022"; /* Bullet point */
+            margin-right: 0.5rem;
+            color: #3498db;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
+
+        .contact {
+            margin-top: 3rem;
+            text-align: center;
+            padding: 2rem;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #3498db; /* Updated header color for consistency */
+            color: #fff;
+            text-align: center;
+            padding: 4rem 0; /* Increased padding for better visual impact */
+        }
+
+        /* Additional styles for the hero image */
+        .hero-image {
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Additional styles for the testimonials section */
+        .testimonials {
+            padding: 4rem 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .testimonial {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+            display: inline-block;
+            max-width: 80%;
+        }
+
+        /* Additional styles for the interactive infographic */
+        .infographic {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .infographic img {
+            max-width: 100%;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        /* Adjusted styles for the hero image */
+        .hero-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+                /* Additional styles for tooltips */
+                .tooltip-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+
+        .tooltip-container:hover .tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+    <title>PowerMe</title>
+</head>
+<body>
+    <header>
+        <h2>PowerMe</h2>
+        <p4>Your all in one power solution to power</p4>
+    </header>
+    <main class="container">
+        <section class="hero-image section">
+        </section>
+        <section class="product section">
+            <div class="product-details">
+                <!-- ... (existing content) ... -->
+                <div class="headerme">PowerMe</div>
+                <p>Your all in one power solution</p>
+                <a href="index.php" class="cta-button">Get in Touch</a>
+            </div>
+            <div class="product-image">
+                <img src="https://rocka.co.za/wp-content/uploads/2022/08/e4759a90b95897a58b2f4a5326169c32.png" alt="Product Image">
+            </div>
+        </section>
+        <section class="testimonials section"> <!--  -->
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"This product has transformed the way I work. It's a game-changer!"</p>
+                <p><em>- Sarah, Creative Professional</em></p>
+            </div>
+            <div class="testimonial">
+                <p>"I can't imagine my life without this product. It's intuitive and powerful!"</p>
+                <p><em>- John, Tech Enthusiast</em></p>
+            </div>
+        </section>
+    </main>
+    <section class="infographic section">
+        <div class="container">
+            <h2>Explore the Features</h2>
+            <img src="https://rocka.co.za/wp-content/uploads/2022/08/e4759a90b95897a58b2f4a5326169c32.png" alt="Product Features">
+        </div>
+    </section>
+    <section id="contact" class="contact section">
+        <div class="container">
+            <!-- ... (existing content) ... -->
+        </div>
+    </section>
+</body>
+</html>
