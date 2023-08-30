@@ -1,4 +1,4 @@
-#Understanding the PowerMe Web Page
+Understanding the PowerMe Web Page
 
 The provided code contains two sets of HTML structures, both with accompanying CSS and JavaScript. We'll primarily focus on the first structure titled "PowerMe".
 
